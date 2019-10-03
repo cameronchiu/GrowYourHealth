@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".PreferencesActivity">
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="174dp"
+        android:layout_height="72dp"
+        android:text="What is your daily goal # of steps"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="57dp" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="141dp"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="57dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
