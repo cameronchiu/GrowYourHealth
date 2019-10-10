@@ -7,104 +7,14 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonTuesday"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginRight="14dp"
-        android:text="@string/tuesday"
-        android:textSize="11"
-        app:layout_constraintBottom_toTopOf="@+id/buttonWednesday"
-        app:layout_constraintEnd_toStartOf="@+id/buttonThursday"
-        app:layout_constraintStart_toEndOf="@+id/buttonSunday"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonFriday"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="74dp"
-        android:layout_marginRight="74dp"
-        android:layout_marginBottom="407dp"
-        android:text="@string/friday"
-        android:textSize="11"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonWednesday"
-        app:layout_constraintTop_toBottomOf="@+id/buttonThursday" />
-
-    <Button
-        android:id="@+id/buttonWednesday"
-        android:layout_width="91dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="407dp"
-        android:text="@string/wednesday"
-        android:textSize="11"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonFriday"
-        app:layout_constraintStart_toEndOf="@+id/buttonMonday"
-        app:layout_constraintTop_toBottomOf="@+id/buttonTuesday" />
-
-    <Button
-        android:id="@+id/buttonSaturday"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginRight="21dp"
-        android:text="@string/saturday"
-        android:textSize="11"
-        app:layout_constraintBottom_toTopOf="@+id/buttonFriday"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonThursday"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonMonday"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        android:layout_marginBottom="407dp"
-        android:text="@string/monday"
-        android:textSize="11"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonWednesday"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonTuesday" />
-
-    <Button
-        android:id="@+id/buttonThursday"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginRight="11dp"
-        android:text="@string/thursday"
-        android:textSize="11"
-        app:layout_constraintBottom_toTopOf="@+id/buttonFriday"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSaturday"
-        app:layout_constraintStart_toEndOf="@+id/buttonTuesday"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonSunday"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginTop="250dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
+        android:id="@+id/buttonDayOfWeek"
+        android:layout_width="197dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="148dp"
         android:text="@string/sunday"
-        android:textSize="11"
-        app:layout_constraintBottom_toTopOf="@+id/buttonMonday"
-        app:layout_constraintEnd_toStartOf="@+id/buttonTuesday"
+        android:textSize="@dimen/dayText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -112,8 +22,23 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="448dp"
+        android:layout_marginBottom="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewtest"
+        android:layout_width="176dp"
+        android:layout_height="86dp"
+        android:text="test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

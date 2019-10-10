@@ -181,4 +181,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grow Tree"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="582dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

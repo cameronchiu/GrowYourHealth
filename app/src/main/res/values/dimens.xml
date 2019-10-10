@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name = "dayText">40sp</dimen>
+    <dimen name = "dayWidth">90dp</dimen>
+    <dimen name = "dayHeight">40dp</dimen>
+</resources>
