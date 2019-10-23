@@ -21,11 +21,11 @@ public class MainActivity extends AppCompatActivity {
     private boolean weekInProgress;
 
     //Preferences
-    private int stepsGoal;
-    private int cupsOfWaterGoal;
-    private int numberOfMealsGoal;
-    private int caloriesConsumedGoal;
-    private int hoursOfSleepGoal;
+    private int stepsGoal = 10000;
+    private int cupsOfWaterGoal = 8;
+    private int numberOfMealsGoal = 3;
+    private int caloriesConsumedGoal = 2000;
+    private int hoursOfSleepGoal = 10;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,11 +103,11 @@ public class MainActivity extends AppCompatActivity {
         //extracts user input and calculates score. Then inputs it into database (lastDayScore)
         //if beginning of week, set startDate in database
         int todayScore = 0;
-        int inputSteps;
-        int inputCupsOfWater;
-        int inputMealsEaten;
-        int inputCaloriesConsumed;
-        int inputHoursOfSleep;
+        int inputSteps = 5000;
+        int inputCupsOfWater = 10;
+        int inputMealsEaten = 2;
+        int inputCaloriesConsumed = 2500;
+        int inputHoursOfSleep = 6;
 
         //extract values from plain text boxes and assign to variables above
 
@@ -150,6 +150,8 @@ public class MainActivity extends AppCompatActivity {
         else{
             //updates lastDayScore
             //lastDayScore = todayScore
+            this.addScore(0);
+
         }
 
         //updates database with lastDayScore
