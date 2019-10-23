@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     private int caloriesConsumedGoal = 2000;
     private int hoursOfSleepGoal = 10;
 
+    private int lastDayScore;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -150,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
         else{
             //updates lastDayScore
             //lastDayScore = todayScore
-            this.addScore(0);
+            databaseHelper.addScore(2);
 
         }
 
